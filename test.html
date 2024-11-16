@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Selection Example</title>
+</head>
+<body>
+    <button onclick="selectDirectory()">Select Directory</button>
+    <input type="file" id="directoryInput" style="display:none" webkitdirectory>
+
+    <script>
+        function selectDirectory() {
+            // Trigger the hidden input to open the directory selection dialog
+            const directoryInput = document.getElementById('directoryInput');
+            directoryInput.click();
+        }
+    </script>
+</body>
+</html>
